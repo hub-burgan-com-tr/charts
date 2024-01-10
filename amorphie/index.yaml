@@ -1,0 +1,43 @@
+apiVersion: v1
+entries:
+  amorphie:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-10T11:28:33.041085477+03:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.4
+    - condition: dapr.enabled
+      name: dapr
+      repository: https://dapr.github.io/helm-charts/
+      version: 1.11.2
+    - condition: dapr-dashboard.enabled
+      name: dapr-dashboard
+      repository: https://dapr.github.io/helm-charts/
+      version: 0.14.0
+    - condition: camunda-platform.enabled
+      name: camunda-platform
+      repository: https://helm.camunda.io
+      version: 8.3.4
+    - condition: hazelcast.enabled
+      name: hazelcast
+      repository: https://hazelcast-charts.s3.amazonaws.com
+      version: 5.8.2
+    description: A Helm chart for Kubernetes
+    digest: 677865ae378773200e07c89d5102878dde18ff7b4b780bc841ba04d8a40ce868
+    icon: https://www.burgan.com.tr/assets/img/BurganBank_Logo.png
+    maintainers:
+    - email: devopsgelistirme@burgan.com.tr
+      name: Burgan Bank DevOps Gelistirme
+    name: amorphie
+    type: application
+    urls:
+    - amorphie-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-10T11:28:32.990950732+03:00"
